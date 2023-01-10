@@ -1,1 +1,1 @@
-# FancyToDoList
+Hello! This is my fancy Shmancy to do list. This list will allow a user to input whatever they want into particular hours, store this in local storage so that it is loaded upon refreshing the page or coming back to the page at a later date. This list also will display the current hour in a red background, with future hours of the day in green, and past hours greyed out. The current date and time that is updated every second is located at the top of the page. 
