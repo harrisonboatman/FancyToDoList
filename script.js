@@ -5,6 +5,8 @@ var btn = $('.btn');
 var txt = $('.description');
 var timeDisplayEl = $('#currentDay');
 var time
+var tttt = dayjs().format('H');
+console.log(tttt);
 $(document).ready(function () {
   $('.saveBtn').on('click', function () {
     let txt = $(this).siblings('.description').val();
@@ -14,10 +16,10 @@ $(document).ready(function () {
   })
 });
   function timeCompare() {
-    let currentTime = moment().hour();
+    let currentTime = tttt;
 
     $('.time-block').each(function () {
-      var timeblock = parseInt($(this).attr("id".split('hour')[1]))
+      var timeblock = parseInt($(this).attr("id").split('hour')[1]);
       if (timeblock < currentTime) {
         $(this).removeClass('future');
         $(this).removeClass('present');
@@ -59,4 +61,4 @@ function displayTime() {
 timeCompare();
 displayTime();
 setInterval(displayTime, 1000);
-console.log(time.value);
+console.log(tttt);
